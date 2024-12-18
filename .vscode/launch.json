@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+      {
+          "type": "lldb",               // Tipo de depurador
+          "request": "launch",          // Tipo de solicitud: lanzar una nueva ejecución
+          "name": "Debug",              // Nombre que aparece en la lista de depuración
+          "program": "${workspaceFolder}/target/debug/${workspaceFolderBasename}",
+          "args": ["polinomio-problema-real"],                   // Argumentos que quieres pasar a tu programa
+          "cwd": "${workspaceFolder}",  // Directorio de trabajo actual
+          "stopOnEntry": false,         // Si quieres detener en la entrada del programa
+          "sourceLanguages": ["rust"]  // Lenguaje principal para depurar
+      }
+  ]
+}
